@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <style>
+        #zk {
+            font-family: fantasy;
+            text-align: right;
+            margin-right: 60px;
+            margin-bottom: -5px;
+        }
+
+        #traits {
+            align-items: center;
+            display: inline-block;
+            vertical-align: top;
+        }
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p {
+            
+            border-radius: 50px 0px 0px 50px;
+            padding-right: 10px;
+            padding: 8px;
+            color: rgb(44, 44, 44) 20px;
+            text-align: right;
+            cursor: default;
+        }
+
+        #images img {
+            width: 300px;
+            height: 300px;
+        }
+
+        #images {
+
+            display: inline-block;
+            height: 300px;
+            overflow: hidden;
+            width: 300px;
+            border-radius: 20px;
+            border: solid rgb(44, 44, 44) 20px;
+        }
+
+        p:hover {
+            color: white;
+            background-color: rgb(43, 42, 42);
+        }
+
+        #everything {
+            animation: sizing 1s 1;
+            margin: auto;
+            display: block;
+            width: 70%;
+        }
+        @keyframes sizing{
+            0%{transform: scale(0);}
+            100%{transform: scale(1);}
+        }
+
+        #movepics{
+            transition: top 1s;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="everything">
+        <h1 id="zk"><i>Zeynep Keskin</i></h1>
+        <div id="traits">
+            <p onmouseover="document.getElementById('movepics').style.top='0px'">A Student </p>
+            <p onmouseover="document.getElementById('movepics').style.top='-300px'">A Child </p>
+            <p onmouseover="document.getElementById('movepics').style.top='-600px'">A CSS Developer </p>
+            <p onmouseover="document.getElementById('movepics').style.top='-900px'">An HTML Developer </p>
+            <p onmouseover="document.getElementById('movepics').style.top='-1200px'">A Javascript Developer </p>
+            <p onmouseover="document.getElementById('movepics').style.top='-1500px'">A Sister</p>
+        </div><div id="images">
+            <div id="movepics">
+                <img src="p2.jpg" alt="">
+                <img src="p1.jpg" alt="">
+                <img src="p4.PNG" alt="">
+                <img src="p5.PNG" alt="">
+                <img src="p6.PNG" alt="">
+                <img src="p3.jpg" alt="">
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
